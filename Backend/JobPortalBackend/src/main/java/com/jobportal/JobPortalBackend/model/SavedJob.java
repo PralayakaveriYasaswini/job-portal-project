@@ -1,0 +1,62 @@
+package com.jobportal.JobPortalBackend.model;
+
+import jakarta.persistence.*;
+
+@Entity
+public class SavedJob {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    // =========================
+    // USER
+    // =========================
+
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+
+    // =========================
+    // JOB
+    // =========================
+
+    @ManyToOne
+    @JoinColumn(name = "job_id")
+    private Job job;
+
+    // =========================
+    // CONSTRUCTOR
+    // =========================
+
+    public SavedJob() {
+    }
+
+    // =========================
+    // GETTERS & SETTERS
+    // =========================
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public Job getJob() {
+        return job;
+    }
+
+    public void setJob(Job job) {
+        this.job = job;
+    }
+}

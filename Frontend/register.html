@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Register | SparkJobs</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+     <a href="index.html"
+   class="logo">
+   <i class="fa-solid fa-briefcase"></i>
+    SparkJobs
+
+</a>
+
+    <ul class="nav-links">
+
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="#jobs">
+                Jobs
+            </a>
+        </li>
+
+        <li>
+            <a href="#contact">
+                Contact
+            </a>
+        </li>
+
+    </ul>
+
+    <div class="nav-buttons">
+
+        <a href="login.html"
+           class="login-btn">
+
+            Login
+
+        </a>
+
+        <a href="register.html"
+           class="register-btn">
+
+            Register
+
+        </a>
+
+    </div>
+
+</nav>
+<!-- LOGIN CONTENT -->
+
+</body>
+
+<div class="container">
+
+    <!-- LEFT -->
+
+    <div class="left-section">
+
+        <div class="overlay">
+
+            <h1>Join SparkJobs</h1>
+
+            <p>
+                Create your account and explore
+                thousands of job opportunities
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- RIGHT -->
+
+    <div class="right-section">
+
+        <form class="login-form"
+              onsubmit="event.preventDefault()">
+
+            <h2>Create Account</h2>
+
+            <!-- SUCCESS -->
+
+            <div id="successMessage"
+                 class="success-message">
+            </div>
+
+            <!-- ERROR -->
+
+            <div id="errorMessage"
+                 class="error-message">
+            </div>
+
+            <!-- NAME -->
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-user"></i>
+
+                <input type="text"
+                       id="name"
+                       placeholder="Enter Full Name">
+
+            </div>
+
+            <!-- EMAIL -->
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <input type="email"
+                       id="email"
+                       placeholder="Enter Email">
+
+            </div>
+
+            <!-- PASSWORD -->
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input type="password"
+                       id="password"
+                       placeholder="Enter Password">
+
+            </div>
+
+            <!-- CONFIRM PASSWORD -->
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input type="password"
+                       id="confirmPassword"
+                       placeholder="Confirm Password">
+
+            </div>
+
+            <!-- BUTTON -->
+
+            <button type="button"
+                    onclick="register()">
+
+                Create Account
+
+            </button>
+
+            <p class="register-text">
+
+                Already have an account?
+
+                <a href="login.html">
+                    Login
+                </a>
+
+            </p>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | SparkJobs</title>
+
+    <link rel="stylesheet"
+          href="admin.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <div class="logo">
+          <i class="fa-solid fa-briefcase"></i>
+            SparkJobs
+
+        </div>
+
+        <ul>
+
+            <li onclick="loadDashboard()">
+
+                <i class="fa-solid fa-house"></i>
+
+                Dashboard
+
+            </li>
+
+            <li onclick="loadJobs()">
+
+                <i class="fa-solid fa-briefcase"></i>
+
+                Manage Jobs
+
+            </li>
+            <li onclick="loadUsers()">
+
+    <i class="fa-solid fa-users"></i>
+    Manage Users
+
+</li>
+
+            <li onclick="loadAddJob()">
+
+                <i class="fa-solid fa-plus"></i>
+
+                Add Job
+
+            </li>
+
+            <li onclick="loadApplications()">
+
+                <i class="fa-solid fa-file-lines"></i>
+
+                Applications
+
+            </li>
+
+            <li onclick="logout()">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                Logout
+
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- MAIN -->
+
+    <div class="main-content">
+
+        <div class="topbar">
+
+            <h2>
+                Admin Dashboard
+            </h2>
+
+        </div>
+
+        <div id="content"></div>
+
+    </div>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
