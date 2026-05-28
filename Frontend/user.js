@@ -1,5 +1,5 @@
 const BASE_URL =
-"http://localhost:8080";
+"https://job-portal-project-iv0v.onrender.com";
 
 const userId =
 localStorage.getItem("userId");

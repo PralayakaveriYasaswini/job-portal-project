@@ -1,5 +1,5 @@
 const BASE_URL =
-"http://localhost:8080";
+"http://job-portal-project-iv0v.onrender.com";
 
 /* ========================= */
 /* DEFAULT PAGE */
@@ -619,7 +619,7 @@ async function loadApplications(){
                     <td>
 
                         ${app.user?.resume
-                            ? `<a href="http://localhost:8080/uploads/resumes/${app.user.resume}" target="_blank">
+                            ? `<a href="http://job-portal-project-iv0v.onrender.com/uploads/resumes/${app.user.resume}" target="_blank">
                                 View
                                </a>`
                             : "No Resume"}
